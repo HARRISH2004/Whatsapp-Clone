@@ -1,4 +1,4 @@
-const socket = io('http://localhost:8000');                 //connection to web server
+const socket = io('http://localhost:3000');                 //connection to web server
 
 const form =document.getElementById('send-container');
 const messageInput= document.getElementById('messageinput');
@@ -30,10 +30,10 @@ form.addEventListener('submit',(e)=>{
 
 
 const name = prompt('Enter your name to join');         //ask user name and let the server know
-socket.emit('new-user-joined',name);                   
+socket.emit('new-user-joined', name);                   
 
 
-socket.on('user_joined',name =>{                    //if a new user joins, server know the other user new_user join 
+socket.on('user-joined',name =>{                    //if a new user joins, server know the other user new_user join 
     append(`${name} joined the chat `,'right');
 })
 
