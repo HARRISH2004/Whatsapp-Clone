@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000');                 //connection to web server
+const socket = io('http://localhost:8000');                 //connection to web server
 
 const form =document.getElementById('send-container');
 const messageInput= document.getElementById('messageinput');

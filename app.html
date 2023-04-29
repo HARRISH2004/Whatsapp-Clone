@@ -4,19 +4,22 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
         <link rel="stylesheet" href="appcss.css">
-        <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>                      <!-- join the node server to file -->
-        <script defer src="client.js"></script>          
+        <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>                      <!-- join the node server to file -->
+        <script defer src="client.js"></script>  
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>       
          
     <title>Tata Bye</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css.css">
 </head>
 <body>
     <nav>
         <img class="logo" src="https://seeklogo.com/images/W/whatsapp-logo-33F6A82887-seeklogo.com.png" alt="img/whatsapp">
     </nav>
     <div class="container">
-        <div class="message right">uday: hii rohan</div>
-        <div class="message left">rohan: hii uday</div>
+        
     </div>
     <div class="send">
         <form action="#" id="send-container">
@@ -25,6 +28,10 @@
         </form>
     </div>
 
-     
+    <script>
+        $('#messageinput').emojioneArea({
+            pickerpositon: 'top'
+        })
+    </script> 
 </body>
 </html>
