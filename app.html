@@ -10,7 +10,7 @@
         <script defer src="client.js"></script>  
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>       
-         
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <title>Tata Bye</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css.css">
 </head>
@@ -23,12 +23,22 @@
     </div>
     <div class="send">
         <form action="#" id="send-container">
+            <textarea id="mytextarea"></textarea>
             <input type="text" name="messageinput" id="messageinput">
             <button class="btn" type="Submit"><b>Send</b></button>
         </form>
     </div>
-
     <script>
+        tinymce.init({
+          selector: "#mytextarea",
+          plugins: "emoticons",
+          toolbar: "emoticons",
+          toolbar_location: "right",
+          menubar: false
+        });
+      </script>
+    <script>
+        
         $('#messageinput').emojioneArea({
             pickerpositon: 'top'
         })
