@@ -4,34 +4,39 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css.css"> -->
         <link rel="stylesheet" href="appcss.css">
         <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>                      <!-- join the node server to file -->
         <script defer src="client.js"></script>  
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>       
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>        -->
          
     <title>Tata Bye</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
 </head>
 <body>
-    <nav>
-        <img class="logo" src="https://seeklogo.com/images/W/whatsapp-logo-33F6A82887-seeklogo.com.png" alt="img/whatsapp">
-    </nav>
     <div class="container">
+        <nav class="header"> 
+            <!-- <img class="logo" src="https://seeklogo.com/images/W/whatsapp-logo-33F6A82887-seeklogo.com.png" alt="img/whatsapp"> -->
+            <h2 class="app">𝐖𝐞 - 𝘾𝙝𝙖𝙩 𝙖𝙥𝙥𝙡𝙞𝙘𝙖𝙩𝙞𝙤𝙣 <i class="fa fa-comments-o" aria-hidden="true"></i>
+                <p class="disc">Real-time web chat application | Group Chat App.</p>
+        </h2>
+        </nav>
         
     </div>
     <div class="send">
         <form action="#" id="send-container">
             <input type="text" name="messageinput" id="messageinput">
-            <button class="btn" type="Submit"><b>Send</b></button>
+            <button class="btn" type="Submit"><i class="fa fa-paper-plane w3-xlarge" aria-hidden="true"></i></button>
+            <!-- <input type="button" value="emoji" id="emoji"> -->
         </form>
     </div>
 
-    <script>
-        $('#messageinput').emojioneArea({
+    <!-- <script>
+        $('#emoji').emojionarea({
             pickerpositon: 'top'
-        })
-    </script> 
+        });
+    </script>  -->
 </body>
 </html>
