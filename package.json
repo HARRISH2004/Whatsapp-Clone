@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "jquery.emojiarea.js": "^0.1.8-beta",
     "socket.io": "^4.6.1"
   }
 }

@@ -95,3 +95,14 @@ body{
     margin-right: 167px;
     border-radius: 14px;
 }
+#emojiButton{
+    margin-left: -44px;
+    overflow: hidden;
+    margin-right: 10px;
+    border: 1px solid white;
+    background-color: white;
+    height: 27px;
+    width: 30px;
+    cursor: pointer;
+    
+}

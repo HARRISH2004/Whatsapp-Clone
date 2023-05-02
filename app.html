@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css.css"> -->
+      
         <link rel="stylesheet" href="appcss.css">
         <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>                      <!-- join the node server to file -->
         <script defer src="client.js"></script>  
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>        -->
-         
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+        crossorigin="anonymous">
+</script>
+<script src="jquery.emojiarea.js"></script>
     <title>Tata Bye</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      
@@ -28,15 +31,26 @@
     <div class="send">
         <form action="#" id="send-container">
             <input type="text" name="messageinput" id="messageinput">
+            <button id="emojiButton" data-emojiarea 
+            data-type="image" 
+            data-global-picker="false">😀</button>
+             
             <button class="btn" type="Submit"><i class="fa fa-paper-plane w3-xlarge" aria-hidden="true"></i></button>
             <!-- <input type="button" value="emoji" id="emoji"> -->
         </form>
     </div>
 
     <!-- <script>
-        $('#emoji').emojionarea({
-            pickerpositon: 'top'
-        });
-    </script>  -->
+        const button = document.querySelector('emojiButton');
+        button.addEventListener('click', () => {
+    const picker = new EmojiButton();
+    picker.showPicker(button);
+    
+    // Listen for emoji selection and add it to the button text
+    picker.on('emoji', emoji => {
+      button.textContent = emoji;
+    });
+  });
+      </script> -->
 </body>
 </html>
