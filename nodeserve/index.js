@@ -22,40 +22,5 @@ io.on('connection',socket=> {
         delete users[socket.id];
     });    
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const express=require('express');
-// const app=express();
-
-// const cors=require('cors');
-// app.use(cors({
-//     origin: "http://127.0.0.1:5500/app.html",
-// }))
-
-// const { Server } = require("socket.io");
-
-// const io = new Server({
-//     cors: {
-//         origin: "http://127.0.0.1:5500",
-//         methods: ["GET", "POST"]
-//     }
-// });
-        
+ 
+ 
